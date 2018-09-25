@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package eva_5_modificacadores_acceso;
+
+/**
+ *
+ * @author invitado2
+ */
+public class Eva_5_Modificacadores_Acceso {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        banco bBank = new banco();
+        bBank.cliente = "Irving Gerardo Mancera Mejia";
+        bBank.saldo = 100000000;
+        System.out.println("Cliente "+ bBank.cliente);
+        System.out.println("Saldo "+bBank.saldo);
+        banco bBank2 = new banco();
+        bBank.saldo =0;
+        
+        
+        
+    }
+    
+}
+
+class banco{
+    // En general los atributos de una clase son privados
+    
+private String cliente;
+private double saldo;
+
+}
