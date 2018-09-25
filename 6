@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * Clase Banco para ejemplificar uso de atributos metodos y modificadores de acceso.
+ * and open the template in the editor.
+ */
+package eva1_7_clases_objetos1;
+
+/**
+ *
+ * @author Irving Gerardo Mancera Mejia
+ */
+public class Eva1_7_Clases_Objetos1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        MissClase bMicuenta = new MissClase();
+        bMicuenta.nombre = " Irving Gerardo Mancera Mejia";
+        bMicuenta.saldo = 10000;
+        System.out.println("Informacion de la cuenta");
+        System.out.println("Titular: " +bMicuenta.nombre);
+        System.out.println("Saldo:   "+bMicuenta.saldo);
+        
+        MejorBanco mbMiMejorBanco = new MejorBanco();
+        mbMiMejorBanco.setNombre("Irving Gerardo :D");
+        mbMiMejorBanco.setSaldo(100000);
+        System.out.println("MI NUEVA CUENTA EN UN MEJOR BANCO");
+        System.out.println("Titular "+mbMiMejorBanco.getNombre());
+        System.out.println("Saldo "+ mbMiMejorBanco.getSaldo());
+    }
+    
+}
+class Principal
+
+{
+
+}
